@@ -1,2 +1,0 @@
--- OUTER JOIN(외부 조인)
--- LETF JOIN

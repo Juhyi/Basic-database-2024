@@ -62,7 +62,7 @@ SELECT c.[name]
   FROM Orders AS o, Book AS b, Customer AS c
  WHERE c.custid = o.custid
    AND o.bookid =b.bookid -- 조인을 위한 조건
-   AND b.price >= 20000  -- 그 외 필터링을 위한0. 조건
+   AND b.price >= 20000  -- 그 외 필터링을 위한 조건
 
 
 
