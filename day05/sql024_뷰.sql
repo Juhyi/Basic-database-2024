@@ -10,7 +10,7 @@ SELECT o.orderid
       ,o.saleprice
       ,b.price
       ,o.orderdate
-  FROM Customer AS c, Orders AS o, Books AS b 
+  FROM Customer AS c, Orders AS o, Book AS b 
  WHERE c.custid = o.custid
    AND o.bookid = b.bookid;
 
