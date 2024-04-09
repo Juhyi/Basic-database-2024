@@ -36,7 +36,7 @@ GROUP BY d.[Names];
 
 
 -- 5. 다음과 같은 결과가 나오도록 SQL 문을 작성하시오.
-SELECT COALESCE(d.Names, '--합계--') AS [책 장르]
+SELECT ISNULL(d.Names, '--합계--') AS [책 장르]
      , COUNT(*) AS 권수
      , FORMAT(SUM(b.Price),'#,#') + '원' AS 총합계금액
 FROM bookstbl AS b
