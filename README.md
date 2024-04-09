@@ -265,7 +265,12 @@ IoT 개발자과정 SQLServer 학습 리포지토리
 
 
 
+
+
         https://github.com/Juhyi/Basic-database-2024/assets/158007405/e7c0bb6c-1b52-4c9a-a297-fd0284e15aff
+
+
+
 
 
 
@@ -326,4 +331,27 @@ IoT 개발자과정 SQLServer 학습 리포지토리
                 - 사용자계정 : hr_user, 비밀번호 : hr_p@ss!
                 - 일반 : 기본 데이터베이스 hr 생성
                 - 사용자매핑 : hr 선택, 데이터베이스 역할 멤버 :db_owner 추가 선택
-    2. HR 사용자 로그인(VS code)
+    2. HR 사용자 로그인(VS code) - hr_user
+        - SELECT
+        - WHERE, ORDER BY
+        - FUNCTION
+        - AGGREGATE FUNC
+        - JOIN
+        - SET ...
+
+    ![HR_ERD](https://raw.githubusercontent.com/Juhyi/basic-database-2024/main/images/db007.png)
+
+## 9일차
+- 실무실습
+    - 쿼리실습
+        - 기본 SELECT, WHERE, ORDER BY
+        - 집계함수 GROUP BY, ROLLUP
+        - JOIN, SUBQUERY, UNION ...
+        - CASE WHEN THEN END...
+        - 내장함수 ...
+
+- 공부를 더 할 부분
+    - 트랜잭션 중급이상
+    - DB 보안 백업과 복원
+    - 모델링 + 정규화 
+
