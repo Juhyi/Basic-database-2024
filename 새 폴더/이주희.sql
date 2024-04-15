@@ -30,9 +30,9 @@ SELECT m.Names AS [회원명]
 -- 4. 다음과 같은 결과가 나오도록 SQL 문을 작성하시오.
 SELECT d.[Names] AS [책 장르]
      , FORMAT(SUM(b.Price),'#,#') + '원' AS 총합계금액
-FROM bookstbl AS b
-JOIN divtbl AS d ON b.Division = d.Division
-GROUP BY d.[Names];
+FROM bookstbl AS b, divtbl AS d 
+WHERE b.Division = d.Division
+GROUP BY d.[Names] ;
 
 
 -- 5. 다음과 같은 결과가 나오도록 SQL 문을 작성하시오.
@@ -43,3 +43,11 @@ FROM bookstbl AS b
 JOIN divtbl AS d ON b.Division = d.Division
 GROUP BY d.[Names]  WITH ROLLUP;
 
+
+SELECT COUNT(*) AS 권수
+FROM bookstbl AS b
+JOIN divtbl AS d ON b.Division = d.Division
+
+SELECT SUM(b.Price)
+FROM bookstbl AS b, divtbl AS d 
+WHERE b.Division = d.Division
